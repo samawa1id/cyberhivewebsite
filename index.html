@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CyberHive — Bee Safe, Bee Secure</title>
+<meta name="description" content="Affordable penetration testing and vulnerability scanning built for startups and small companies. Bee safe, bee secure.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ambient scan-line backdrop -->
+<div class="scan-backdrop" aria-hidden="true"></div>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="26" height="26">
+          <path d="M16 2 L28 9 V23 L16 30 L4 23 V9 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M11 16 L14.5 19.5 L21 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="brand-text">CyberHive<small>Bee Safe, Bee Secure</small></span>
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About Us</a>
+      <a href="#contact" class="nav-link">Contact Us</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#contact" class="btn btn-ghost">Log in</a>
+      <a href="#contact" class="btn btn-primary">Get a free scan</a>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===================== HOME ===================== -->
+  <section id="home" class="section hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy" data-reveal>
+        <p class="eyebrow"><span class="dot"></span>Pentesting &amp; vulnerability scanning for lean teams</p>
+        <h1>Find the holes in your website<br> before someone else does.</h1>
+        <p class="slogan"><span class="hex-bullet">⬡</span>Bee safe. Bee secure.</p>
+        <p class="lead">
+          CyberHive gives startups and small companies real penetration testing and continuous
+          vulnerability scanning — scoped and priced for teams that don't have a six-figure
+          security budget, or a security team at all.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary btn-lg">Get a free scan</a>
+          <a href="#services" class="btn btn-outline btn-lg">See how it works</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>48hr</strong><span>to first findings</span></div>
+          <div><strong>Fixed-fee</strong><span>no surprise invoices</span></div>
+          <div><strong>OWASP-aligned</strong><span>reports you can act on</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-reveal>
+        <div class="hive-pattern" aria-hidden="true"></div>
+        <div class="terminal" role="img" aria-label="Sample vulnerability scan output">
+          <div class="terminal-bar">
+            <span class="tdot t-red"></span><span class="tdot t-amber"></span><span class="tdot t-green"></span>
+            <span class="terminal-title">cyberhive scan — acme-startup.com</span>
+          </div>
+          <div class="terminal-body" id="terminalBody"></div>
+        </div>
+        <div class="badge-float badge-1">92 assets scanned</div>
+        <div class="badge-float badge-2">Report ready in 48hr</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- goal / mission strip -->
+  <section class="section mission" data-reveal>
+    <div class="wrap mission-inner">
+      <p class="mission-kicker">Our goal</p>
+      <p class="mission-statement">
+        Enterprise security testing has always been priced for enterprises. We built CyberHive
+        so a five-person startup can get the same rigor — real testers, real reports, real
+        remediation guidance — without the enterprise price tag or the six-week wait. One hive,
+        watching every corner of your site.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section id="services" class="section services">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow eyebrow-alt">What we do</p>
+        <h2>Everything you need to know your risk — nothing you don't.</h2>
+      </div>
+
+      <div class="card-grid" data-reveal>
+        <article class="service-card">
+          <div class="service-icon"><span class="sev sev-crit">●</span></div>
+          <h3>Manual penetration testing</h3>
+          <p>Human testers probe your app the way an attacker would — business logic, auth flaws, chained exploits that scanners miss.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon"><span class="sev sev-high">●</span></div>
+          <h3>Automated vulnerability scanning</h3>
+          <p>Continuous scans across your web app and infrastructure, tuned to cut noise so you're not chasing false positives.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon"><span class="sev sev-med">●</span></div>
+          <h3>Plain-language reports</h3>
+          <p>Every finding comes with severity, real-world impact, and a fix — written for founders and developers, not just security teams.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon"><span class="sev sev-low">●</span></div>
+          <h3>Retesting &amp; sign-off</h3>
+          <p>Ship a fix, we verify it closed the hole. No extra scoping calls, no extra invoice for confirming your work.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROCESS ===================== -->
+  <section class="section process">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow eyebrow-alt">How a test runs</p>
+        <h2>One flat scope, from kickoff to fix.</h2>
+      </div>
+
+      <ol class="process-list" data-reveal>
+        <li>
+          <span class="proc-index">01</span>
+          <div>
+            <h3>Scope</h3>
+            <p>Tell us what's live — marketing site, app, API. We size the engagement to your budget, not the other way around.</p>
+          </div>
+        </li>
+        <li>
+          <span class="proc-index">02</span>
+          <div>
+            <h3>Scan</h3>
+            <p>Automated scanning maps your attack surface and flags likely weak points within the first day.</p>
+          </div>
+        </li>
+        <li>
+          <span class="proc-index">03</span>
+          <div>
+            <h3>Test</h3>
+            <p>Our team manually attempts to exploit what the scan surfaces, plus the things scanners always miss.</p>
+          </div>
+        </li>
+        <li>
+          <span class="proc-index">04</span>
+          <div>
+            <h3>Report</h3>
+            <p>You get a prioritized, plain-language report — what's exposed, how bad it is, and exactly how to fix it.</p>
+          </div>
+        </li>
+        <li>
+          <span class="proc-index">05</span>
+          <div>
+            <h3>Retest</h3>
+            <p>Push your fixes, we confirm they hold, and you get a clean report to show customers or investors.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===================== CTA BAND ===================== -->
+  <section class="section cta-band" data-reveal>
+    <div class="wrap cta-inner">
+      <h2>Not sure what's exposed? That's the point of a scan.</h2>
+      <p>Get a free, no-obligation vulnerability snapshot of your website in 48 hours.</p>
+      <a href="#contact" class="btn btn-primary btn-lg">Get a free scan</a>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="section about">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow eyebrow-alt">About us</p>
+        <h2>Small team. Same standard we hold your security to.</h2>
+        <p class="about-lead">
+          CyberHive is built by a small team that believes good security testing shouldn't be
+          reserved for companies who can afford an in-house red team. We're four people who
+          scope, test, design, and explain security the way we'd want it explained to us —
+          bee safe, bee secure.
+        </p>
+      </div>
+
+      <div class="team-grid" data-reveal>
+        <article class="team-card">
+          <div class="team-avatar" style="--av-a:#c00971; --av-b:#4a467d;">SA</div>
+          <h3>Sama Al Walid</h3>
+          <p class="team-role">Team Leader &amp; Developer</p>
+        </article>
+
+        <article class="team-card">
+          <div class="team-avatar" style="--av-a:#7b6fc4; --av-b:#c00971;">MH</div>
+          <h3>Maryam Haytham</h3>
+          <p class="team-role">Marketing &amp; Note-taker</p>
+        </article>
+
+        <article class="team-card">
+          <div class="team-avatar" style="--av-a:#4a467d; --av-b:#8b85c4;">DT</div>
+          <h3>Doha Tarek</h3>
+          <p class="team-role">Designer &amp; Front-end Developer</p>
+        </article>
+
+        <article class="team-card">
+          <div class="team-avatar" style="--av-a:#c00971; --av-b:#7b6fc4;">JS</div>
+          <h3>Joudy Sherif</h3>
+          <p class="team-role">Presenter &amp; Technical Member</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="section contact">
+    <div class="wrap contact-grid">
+      <div class="contact-copy" data-reveal>
+        <p class="eyebrow eyebrow-alt">Contact us</p>
+        <h2>Tell us about your website. We'll tell you what's at risk.</h2>
+        <p>
+          Send over a few details and we'll follow up within one business day with next steps
+          and a fixed quote — sized for your budget, not a generic enterprise package.
+        </p>
+
+        <ul class="contact-meta">
+          <li><span class="meta-label">Email</span> hello@cyberhive.dev</li>
+          <li><span class="meta-label">Response time</span> Within 24 hours</li>
+          <li><span class="meta-label">First scan</span> Free, no obligation</li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contactForm" data-reveal>
+        <div class="form-row">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" placeholder="Jane Founder" required>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Work email</label>
+          <input type="email" id="email" name="email" placeholder="jane@yourcompany.com" required>
+        </div>
+
+        <div class="form-row">
+          <label for="company">Company name</label>
+          <input type="text" id="company" name="company" placeholder="Your company, Inc." required>
+        </div>
+
+        <div class="form-row">
+          <label for="website">Website to test <span class="optional">(optional)</span></label>
+          <input type="text" id="website" name="website" placeholder="yourcompany.com">
+        </div>
+
+        <div class="form-row">
+          <label for="message">What are you looking to secure?</label>
+          <textarea id="message" name="message" rows="4" placeholder="e.g. we're pre-launch and want a scan before we go live" required></textarea>
+        </div>
+
+        <!-- anti-spam honeypot, left empty by real users -->
+        <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off">
+
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submitBtn">
+          <span class="btn-label">Send message</span>
+        </button>
+
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <a class="brand brand-sm" href="#top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="20" height="20">
+          <path d="M16 2 L28 9 V23 L16 30 L4 23 V9 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M11 16 L14.5 19.5 L21 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      CyberHive
+    </a>
+    <p class="footer-note">⬡ Bee safe, bee secure — security testing for teams who can't afford not to.</p>
+    <p class="footer-copy">© 2026 CyberHive. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
